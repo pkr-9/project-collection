@@ -45,7 +45,7 @@ function Contact() {
                 ></iframe>
 
                 {/* <iframe
-                  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBMlLa3XrAmtemtf97Z2YpXwPLlimRK7Pk&center=18.514041540658845,73.82060788958046&zoom=15"
+                  src="https://www.google.com/maps/embed/v1/view?key=...........&center=18.514041540658845,73.82060788958046&zoom=15"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -55,7 +55,7 @@ function Contact() {
                 ></iframe> */}
 
                 {/* <iframe
-                  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBMlLa3XrAmtemtf97Z2YpXwPLlimRK7Pk&placeid=ChIJb6N7l5e_wjsRQyDLdpvhqBc"
+                  src="https://www.google.com/maps/embed/v1/place?key=...........&placeid=ChIJb6N7l5e_wjsRQyDLdpvhqBc"
                   width="100%"
                   height="100%"
                   style="border:0;"
@@ -65,7 +65,7 @@ function Contact() {
                 ></iframe> */}
 
                 {/* <iframe
-                  src="https://www.google.com/maps/embed/v1/view?key=AIzaSyBMlLa3XrAmtemtf97Z2YpXwPLlimRK7Pk&center=18.514041540658845,73.82060788958046&zoom=15"
+                  src="https://www.google.com/maps/embed/v1/view?key=...........&center=18.514041540658845,73.82060788958046&zoom=15"
                   width="100%"
                   height="100%"
                   style="border:0;"
