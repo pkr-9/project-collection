@@ -1,0 +1,189 @@
+.project-detail {
+  background-color: #ffffff;
+  color: var(--nav-link-color);
+  padding: 1rem;
+  width: 100%;
+  margin: 80px auto 0 auto;
+  animation: fadeIn 0.5s ease-in;
+
+  .detail-image {
+    width: 100%;
+    border: dashed #0b0069;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+  }
+
+  .title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #000;
+  }
+
+  .meta {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    color: #458cff;
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1rem 0 1.5rem;
+    color: #000;
+  }
+
+  .section {
+    margin-top: 2rem;
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 0.6rem;
+      color: #00ffee;
+      border-bottom: 1px solid rgba(0, 255, 255, 0.15);
+      padding-bottom: 0.4rem;
+    }
+
+    ul {
+      padding-left: 1.25rem;
+      color: #000;
+
+      li {
+        color: #000;
+        margin-bottom: 0.5rem;
+        list-style-type: square;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      color: #000;
+    }
+  }
+
+  .tech-stack {
+    font-weight: bold;
+    color: #000;
+    font-size: 1.05rem;
+  }
+
+  .highlight {
+    font-size: 1.05rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    color: #000;
+  }
+
+  .team {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      margin-bottom: 0.7rem;
+      font-weight: 500;
+
+      .name {
+        font-weight: 600;
+      }
+
+      a {
+        margin-left: 10px;
+        color: #000;
+        text-decoration: underline;
+
+        &:hover {
+          color: #00ccff;
+        }
+      }
+    }
+  }
+
+  .links {
+    margin-top: 2rem;
+
+    a {
+      display: inline-block;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      padding: 10px 18px;
+      background-color: #00ffee;
+      color: #000;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: 0.3s ease;
+
+      &:hover {
+        background-color: #00ccff;
+      }
+    }
+  }
+}
+
+/* --------------------------------------
+   📱 Responsive Enhancements
+--------------------------------------- */
+
+@media (min-width: 576px) {
+  .project-detail {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-detail {
+    padding: 2rem;
+
+    .title,
+    .meta,
+    .description,
+    .highlight,
+    .links,
+    .section {
+      padding: 0 1rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .project-detail {
+    padding: 2rem 3rem;
+
+    .title {
+      font-size: 2.2rem;
+    }
+
+    .meta {
+      font-size: 1.05rem;
+    }
+
+    .description {
+      font-size: 1.1rem;
+    }
+
+    .section h2 {
+      font-size: 1.6rem;
+    }
+
+    .links {
+      padding: 0 1rem;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-detail {
+    padding: 2rem 4.5rem;
+
+    .title,
+    .meta,
+    .description,
+    .highlight,
+    .links,
+    .section {
+      padding: 0 70px;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+finance-tracker-frontend/
+├── public/                                  # Static assets served directly
+│   └── favicon.svg
+│   └── robots.txt
+│   └── index.html
+│
+├── src/
+│   ├── api/                                 # API layers & services
+│   │   ├── axios.ts                         # Axios instance with interceptors
+│   │   ├── endpoints.ts                     # API endpoint constants
+│   │   └── services/
+│   │       ├── auth.service.ts
+│   │       ├── transaction.service.ts
+│   │       └── budget.service.ts
+│
+│   ├── assets/                              # Images, logos, icons
+│   │   ├── images/
+│   │   └── icons/
+│
+│   ├── components/                          # Reusable UI components
+│   │   ├── Button/
+│   │   │   ├── Button.tsx
+│   │   │   └── Button.module.css
+│   │   ├── Input/
+│   │   └── ...
+│
+│   ├── constants/                           # Static values, enums, config
+│   │   ├── categories.ts
+│   │   └── appConfig.ts
+│
+│   ├── contexts/                            # React Contexts
+│   │   ├── AuthContext.tsx
+│   │   └── ThemeContext.tsx
+│
+│   ├── features/                            # Domain-specific modules
+│   │   ├── auth/
+│   │   │   ├── pages/
+│   │   │   │   └── Login.tsx
+│   │   │   ├── hooks/
+│   │   │   └── types.ts
+│   │   ├── dashboard/
+│   │   ├── transactions/
+│   │   ├── budgets/
+│   │   └── reports/
+│
+│   ├── hooks/                               # Custom React hooks
+│   │   ├── useAuth.ts
+│   │   ├── useForm.ts
+│   │   └── useTransactions.ts
+│
+│   ├── layouts/                             # App shells & templates
+│   │   ├── MainLayout.tsx
+│   │   └── AuthLayout.tsx
+│
+│   ├── pages/                               # Top-level routes
+│   │   ├── Home.tsx
+│   │   ├── NotFound.tsx
+│   │   └── index.ts                         # Route exports
+│
+│   ├── routes/                              # Route definitions
+│   │   ├── ProtectedRoute.tsx
+│   │   └── routes.tsx
+│
+│   ├── store/                               # Global state (e.g. Redux/Zustand)
+│   │   ├── index.ts
+│   │   └── slices/
+│   │       ├── authSlice.ts
+│   │       └── transactionSlice.ts
+│
+│   ├── styles/                              # Global styles and theming
+│   │   ├── tailwind.css
+│   │   └── variables.css
+│
+│   ├── types/                               # Global types & interfaces
+│   │   ├── auth.types.ts
+│   │   ├── transaction.types.ts
+│   │   └── budget.types.ts
+│
+│   ├── utils/                               # Utility/helper functions
+│   │   ├── formatDate.ts
+│   │   ├── currencyFormatter.ts
+│   │   └── validators.ts
+│
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── vite-env.d.ts
+│
+├── .env                                     # VITE_API_URL, etc.
+├── .env.production
+├── .eslintrc.js                             # Linting rules
+├── .prettierrc                              # Code formatter
+├── Dockerfile
+├── nginx.conf                               # If using Docker + Nginx
+├── package.json
+├── postcss.config.js
+├── tailwind.config.ts
+├── tsconfig.json
+├── tsconfig.paths.json                      # Path aliases
+├── vercel.json
+└── vite.config.ts

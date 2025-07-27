@@ -1,0 +1,50 @@
+src/main/java/com/tracker/finance/
+├── core/                  # Core application setup and cross-cutting concerns
+│   ├── config/            # Spring configurations (Security, Jackson, etc.)
+│   ├── exception/         # Global exception handling
+│   │   ├── GlobalExceptionHandler.java
+│   │   └── specific_exceptions/
+│   ├── security/          # All JWT and security-related components
+│   │   ├── jwt/             # JWT provider, filter, and related classes
+│   │   ├── service/         # UserDetailsService implementation
+│   │   └── AclService.java  # For checking ownership (optional but recommended)
+│   └── common/            # Shared DTOs, enums, or utils
+│
+├── modules/               # Main application modules (feature-based)
+│   ├── auth/              # User registration and login
+│   │   ├── AuthController.java
+│   │   ├── AuthService.java
+│   │   └── dto/
+│   │       ├── LoginRequest.java
+│   │       ├── JwtResponse.java
+│   │       └── RegisterRequest.java
+│   │
+│   ├── user/              # User management
+│   │   ├── User.java          # JPA Entity
+│   │   └── UserRepository.java
+│   │
+│   ├── transaction/       # Transaction management
+│   │   ├── TransactionController.java
+│   │   ├── TransactionService.java
+│   │   ├── TransactionRepository.java
+│   │   ├── Transaction.java       # JPA Entity
+│   │   └── dto/
+│   │       ├── TransactionDto.java
+│   │       └── CreateTransactionRequest.java
+│   │
+│   ├── budget/            # Budget management
+│   │   ├── BudgetController.java
+│   │   ├── BudgetService.java
+│   │   ├── BudgetRepository.java
+│   │   ├── Budget.java            # JPA Entity
+│   │   └── dto/
+│   │       ├── BudgetDto.java
+│   │       └── CreateBudgetRequest.java
+│   │
+│   └── analytics/         # Analytics and reporting
+│       ├── AnalyticsController.java
+│       ├── AnalyticsService.java
+│       └── dto/
+│           └── MonthlySummaryDto.java
+│
+└── FinanceApplication.java

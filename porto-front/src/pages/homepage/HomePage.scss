@@ -1,0 +1,98 @@
+.homepage-wrapper {
+  background-color: #ffffff;
+  background-size: 400% 400%;
+  animation: gradientShift 30s ease infinite;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: #000; // default text color for light theme
+  transition: background 0.5s ease, color 0.5s ease;
+
+  &.dark {
+    color: #f0f0f0;
+
+    .homepage-about {
+      color: #b7fffb;
+
+      h2 {
+        color: #00fff0;
+        text-shadow: 0 0 5px #00fff0;
+      }
+
+      .homepage-about-card {
+        border-color: #00fff0;
+
+        h3 {
+          color: #ffffff;
+        }
+
+        p {
+          color: #e0f7f7;
+        }
+      }
+    }
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.homepage-projects {
+  padding: 40px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* ======= Strength Section Wrapper ======= */
+.strength-section {
+  padding: 60px 20px;
+  z-index: 1;
+  position: relative;
+}
+
+/* ======= Responsive Styles ======= */
+@media (max-width: 992px) {
+  .homepage-about h2 {
+    font-size: 2.5rem;
+  }
+
+  .homepage-about .content h3 {
+    font-size: 2rem;
+  }
+
+  .homepage-about .homepage-about-card p {
+    font-size: 1.1rem;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homepage-about-card {
+    padding: 30px 20px;
+  }
+
+  .homepage-about .content h3 {
+    font-size: 1.8rem;
+  }
+
+  .homepage-about .homepage-about-card p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .homepage-about h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .homepage-about .homepage-about-card {
+    padding: 25px 15px;
+  }
+
+  .homepage-about .content p {
+    font-size: 0.95rem;
+  }
+}

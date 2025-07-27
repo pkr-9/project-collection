@@ -1,0 +1,118 @@
+// src/components/layout/contact/Contact.scss
+.contact-page {
+  background-color: #ffffff;
+  margin-top: 90px;
+}
+.contact-section {
+  border-radius: 1rem;
+
+  .contact-title {
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .contact-subtitle {
+    font-size: 1rem;
+    color: #4b5563;
+    max-width: 600px;
+    margin: 0.5rem auto 2rem;
+  }
+
+  .contact-card {
+    background: linear-gradient(to bottom right, #f0f4ff, #e0e7ff);
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(100, 116, 139, 0.1);
+
+    .card-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #1f2937;
+    }
+
+    .contact-info {
+      text-decoration: none;
+      color: inherit;
+      transition:
+        background-color 0.3s,
+        transform 0.3s;
+      padding: 0.75rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      &:hover {
+        background-color: rgba(59, 130, 246, 0.1);
+        transform: translateX(5px);
+      }
+
+      .contact-icon {
+        background-color: #e0e7ff;
+        padding: 0.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.75rem;
+
+        svg {
+          color: #2563eb;
+        }
+      }
+
+      .contact-label {
+        font-size: 0.875rem;
+        color: #6b7280;
+      }
+
+      .contact-value {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1f2937;
+      }
+    }
+
+    .social-links {
+      margin-top: 1.5rem;
+
+      h5 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1f2937;
+        margin-bottom: 0.75rem;
+      }
+
+      .social-icon {
+        background-color: rgba(59, 130, 246, 0.1);
+        padding: 0.5rem;
+        border-radius: 50%;
+        color: #2563eb;
+        margin-right: 0.75rem;
+        transition:
+          background-color 0.3s,
+          color 0.3s,
+          transform 0.3s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+          background-color: #2563eb;
+          color: #fff;
+          transform: translateY(-2px);
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}

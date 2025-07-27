@@ -1,0 +1,77 @@
+.strength-section {
+  background: linear-gradient(135deg, #f8fafc, #e0f2fe);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-wrapper {
+  transition: transform 0.3s ease-in-out;
+}
+
+.strength-card {
+  border-radius: 1.5rem;
+  padding: 2rem 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 1rem;
+  margin: 0 auto 1rem auto;
+  color: white;
+  transition: transform 0.3s;
+}
+
+// Gradient classes
+.gradient-emerald-teal {
+  background: linear-gradient(to right, #10b981, #14b8a6);
+}
+
+.gradient-blue-indigo {
+  background: linear-gradient(to right, #3b82f6, #6366f1);
+}
+
+.gradient-purple-pink {
+  background: linear-gradient(to right, #8b5cf6, #ec4899);
+}
+
+.gradient-orange-red {
+  background: linear-gradient(to right, #f97316, #ef4444);
+}
+
+// Hover Effects
+.hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  border-radius: 1.5rem;
+  z-index: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-wrapper:hover .hover-overlay {
+  opacity: 0.05;
+}
+
+.hover-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 0;
+  border-radius: 0 0 1.5rem 1.5rem;
+  z-index: 2;
+  transition: width 0.4s ease;
+}
+
+.card-wrapper:hover .hover-bar {
+  width: 100%;
+}

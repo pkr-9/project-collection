@@ -1,0 +1,22 @@
+[
+  {
+    "img": "../../assets/images/spring_icon.png",
+    "title": "Robust Backend",
+    "desc": "Spring Boot"
+  },
+  {
+    "img": "../../assets/images/React_icon.png",
+    "title": "Dynamic Frontend",
+    "desc": "React"
+  },
+  {
+    "img": "../../assets/images/bootstrap_icon.png",
+    "title": "Smooth Styling",
+    "desc": "Bootstrap"
+  },
+  {
+    "img": "../../assets/images/git_icon.png",
+    "title": "VCS",
+    "desc": "GIT"
+  }
+]

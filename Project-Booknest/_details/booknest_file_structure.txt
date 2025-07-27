@@ -1,0 +1,96 @@
+book-backend/
+│
+├── src/
+│   ├── app.js
+│   ├── server.js
+│   ├── config/
+│   │   ├── database.js
+│   │   └── mailConfig.js
+│   │
+│   ├── controllers/
+│   │   ├── adminController.js
+│   │   ├── authController.js
+│   │   ├── bookController.js
+│   │   ├── cartController.js
+│   │   ├── categoryController.js
+│   │   ├── cityController.js
+│   │   ├── orderController.js
+│   │   ├── stateController.js
+│   │   ├── userController.js
+│   │   ├── otpController.js
+│   │   ├── invoiceController.js
+│   │
+│   ├── enums/
+│   │   ├── index.js
+│   │   ├── orderStatus.js
+│   │   ├── paymentModes.js
+│   │   └── userRoles.js
+│   │
+│   ├── middlewares/
+│   │   ├── authMiddleware.js
+│   │   ├── errorHandler.js
+│   │   ├── rateLimiter.js
+│   │   └── otpMiddleware.js
+│   │
+│   ├── models/
+│   │   ├── admin.model.js
+│   │   ├── book.model.js
+│   │   ├── cart.model.js
+│   │   ├── category.model.js
+│   │   ├── city.model.js
+│   │   ├── order.model.js
+│   │   ├── state.model.js
+│   │   ├── user.model.js
+│   │   └── otp.model.js
+│   │
+│   ├── routes/
+│   │   ├── index.js
+│   │   ├── admin.routes.js
+│   │   ├── auth.routes.js
+│   │   ├── book.routes.js
+│   │   ├── cart.routes.js
+│   │   ├── category.routes.js
+│   │   ├── location.routes.js
+│   │   ├── order.routes.js
+│   │   ├── user.routes.js
+│   │   ├── otp.routes.js
+│   │   └── invoice.routes.js
+│   │
+│   ├── services/
+│   │   ├── index.js
+│   │   ├── admin.service.js
+│   │   ├── auth.service.js
+│   │   ├── book.service.js
+│   │   ├── cart.service.js
+│   │   ├── category.service.js
+│   │   ├── city.service.js
+│   │   ├── order.service.js
+│   │   ├── state.service.js
+│   │   ├── user.service.js
+│   │   ├── otp.service.js
+│   │   └── invoice.service.js
+│   │
+│   ├── utils/
+│   │   ├── jwtUtils.js
+│   │   ├── passwordUtils.js
+│   │   ├── emailUtils.js
+│   │   ├── logger.js
+│   │   └── pdfUtils.js
+│   │
+│   ├── validators/
+│   │   ├── shared.js
+│   │   ├── auth.validator.js
+│   │   ├── book.validator.js
+│   │   ├── user.validator.js
+│   │   ├── order.validator.js
+│   │   └── otp.validator.js
+│   │
+│   └── templates/
+│       ├── invoiceTemplate.html
+│       └── emailTemplate.html
+│
+├── .env
+├── package.json
+├── README.md
+└── logs/
+    └── app.log
